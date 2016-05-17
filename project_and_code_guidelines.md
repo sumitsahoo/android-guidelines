@@ -392,6 +392,23 @@ When using one of these components, you __must__ define the keys as a `static fi
 
 Note that the arguments of a Fragment - `Fragment.getArguments()` - are also a Bundle. However, because this is a quite common use of Bundles, we define a different prefix for them.
 
+Android coding syle guide states:
+
+Non-public, non-static field names start with m.
+Static field names start with s.
+Other fields start with a lower case letter.
+Public static final fields (constants) are ALL_CAPS_WITH_UNDERSCORES.
+It would be private ImageButton mButtonStart; or private static sSingletonThing;
+
+That convention is by the way only required to be used if you want to contribute to the Android sourcecode, you can write your own apps in any style.
+
+The only naming convention that you should really follow is the general Java Class/Method/variable schema: (from above wikipedia link)
+
+Class names: UpperCamelCase
+Method names: lowerCamelCase
+Variable names: lowerCamelCase
+Constants: ALL_CAPS
+
 Example:
 
 ```java
